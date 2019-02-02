@@ -1,0 +1,17 @@
+winlogbeat.event_logs:
+  - name: Application
+  - name: Security
+  - name: System
+  - name: Windows Powershell
+  - name: Microsoft-Windows-Sysmon/Operational
+  - name: Microsoft-Windows-PowerShell/Operational
+  - name: Microsoft-Windows-Windows Defender/Operational
+  - name: Microsoft-Windows-Windows Firewall With Advanced Security/Firewall
+  - name: Microsoft-Windows-Winlogon/Operational
+  - name: Microsoft-Windows-WinRM/Operational
+
+name: "Container"
+
+#----------------------------- Logstash output --------------------------------
+output.logstash:
+  hosts: ["172.20.3.35:5044"]
