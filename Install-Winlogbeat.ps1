@@ -32,6 +32,8 @@ Write-Host "Location set $path"
 
 Write-Host "Retrieving Winlogbeat..."
 
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 Invoke-Webrequest -Uri https://artifacts.elastic.co/downloads/beats/winlogbeat/winlogbeat-6.6.0-windows-x86_64.zip -Outfile winlogbeat-6.6.0-windows-x86_64.zip
 
 Write-Host "Winlogbeat Retrieved."
