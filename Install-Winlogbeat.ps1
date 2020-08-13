@@ -40,7 +40,7 @@ Write-Host "Winlogbeat Retrieved."
 
 Write-Host "Retrieving Winlogbeat Configuration File..."
 
-Invoke-WebRequest -Uri https://raw.githubusercontent.com/aluminoobie/Install-Winlogbeat/master/winlogbeat.yml -OutFile winlogbeat.yml
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/lock-wire/Install-Winlogbeat/master/winlogbeat.yml -OutFile winlogbeat.yml
 
 Write-Host "Configuration File Retrieved."
 
